@@ -1,0 +1,6 @@
+{
+  "name": "POOLSTORE – Sistema Android TV Box",
+  "description": "Plataforma oficial de POOLSTORE exclusiva para el Sistema Android TV Box: información comercial, compra directa y Centro de Ayuda para clientes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
