@@ -46,50 +46,50 @@
 }
 
 .qr-gentle-float {
-  animation: qrGentleFloat 5.5s ease-in-out infinite;
+  animation: qrGentleFloat 4s ease-in-out infinite;
   will-change: transform;
 }
 
 @keyframes qrGentleFloat {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-3.5px);
+    transform: translateY(-2px) scale(1.012);
   }
 }
 
 .qr-soft-halo {
-  animation: qrSoftHalo 4.8s ease-in-out infinite;
+  animation: qrSoftHalo 4s ease-in-out infinite;
   will-change: transform, opacity;
 }
 
 @keyframes qrSoftHalo {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.3;
     transform: scale(0.985);
   }
   50% {
-    opacity: 0.72;
-    transform: scale(1.015);
+    opacity: 0.78;
+    transform: scale(1.025);
   }
 }
 
 .qr-card-breath {
-  animation: qrCardBreath 4.8s ease-in-out infinite;
+  animation: qrCardBreath 4s ease-in-out infinite;
 }
 
 @keyframes qrCardBreath {
   0%,
   100% {
-    border-color: #e5e7eb;
-    box-shadow: 0 4px 14px -4px rgba(16, 185, 129, 0.08);
+    border-color: #d1d5db;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.22), 0 4px 14px -4px rgba(16, 185, 129, 0.1);
   }
   50% {
-    border-color: #a7f3d0;
-    box-shadow: 0 10px 24px -6px rgba(16, 185, 129, 0.22);
+    border-color: #6ee7b7;
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.06), 0 12px 26px -6px rgba(16, 185, 129, 0.26);
   }
 }
 
