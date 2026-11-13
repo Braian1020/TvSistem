@@ -1,11 +1,21 @@
 import { useState } from 'react';
 import { Tv } from 'lucide-react';
+import tvboxHeroImg from '../assets/images/tvbox_hero_living_room_1794531370782.jpg';
+import tvboxDeviceImg from '../assets/images/tvbox_device_closeup_1794531372493.jpg';
+import tvboxUnboxingImg from '../assets/images/tvbox_unboxing_kit_1794531372514.jpg';
+
+const BUNDLED_IMAGE_MAP: Record<string, string> = {
+  '/src/assets/images/tvbox_hero_living_room_1794531370782.jpg': tvboxHeroImg,
+  '/src/assets/images/tvbox_device_closeup_1794531372493.jpg': tvboxDeviceImg,
+  '/src/assets/images/tvbox_unboxing_kit_1794531372514.jpg': tvboxUnboxingImg,
+};
 
 interface MediaImageProps {
   src: string;
   alt: string;
   className?: string;
   fallbackLabel?: string;
+  loading?: 'eager' | 'lazy';
 }
 
 export function MediaImage({
@@ -13,8 +23,10 @@ export function MediaImage({
   alt,
   className = '',
   fallbackLabel = 'Sistema Android TV Box',
+  loading = 'eager',
 }: MediaImageProps) {
   const [hasError, setHasError] = useState(false);
+  const resolvedSrc = BUNDLED_IMAGE_MAP[src] ?? src;
 
   if (hasError) {
     return (
@@ -31,8 +43,10 @@ export function MediaImage({
 
   return (
     <img
-      src={src}
+      src={resolvedSrc}
       alt={alt}
+      loading={loading}
+      decoding="async"
       referrerPolicy="no-referrer"
       onError={() => setHasError(true)}
       className={className}

@@ -8,7 +8,29 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname, '.'),
+      },
+    },
+    build: {
+      outDir: 'dist',
+      target: 'es2022',
+      sourcemap: false,
+      assetsInlineLimit: 4096,
+      rolldownOptions: {
+        output: {
+          codeSplitting: {
+            groups: [
+              {
+                name: 'react-vendor',
+                test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/,
+              },
+              {
+                name: 'icons-vendor',
+                test: /node_modules[\\/]lucide-react[\\/]/,
+              },
+            ],
+          },
+        },
       },
     },
     server: {
