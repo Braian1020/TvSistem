@@ -30,7 +30,7 @@ export function VideoLibrarySection() {
 
   const handleCopyFeaturedCode = async () => {
     try {
-      await navigator.clipboard.writeText('5975927');
+      await navigator.clipboard.writeText('2339077');
       setCopiedFeaturedCode(true);
       window.setTimeout(() => setCopiedFeaturedCode(false), 2000);
     } catch {
@@ -86,7 +86,7 @@ export function VideoLibrarySection() {
                   Código vigente Xuper TV
                 </p>
                 <p className="text-2xl font-extrabold text-neutral-950 tabular-nums tracking-wider">
-                  5975927
+                  2339077
                 </p>
               </div>
               <button

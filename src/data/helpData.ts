@@ -268,10 +268,10 @@ export const PREINSTALLED_APPS: PreinstalledApp[] = [
     category: 'temporal',
     categoryLabel: 'Temporal · Cortesía',
     status: 'Activo',
-    downloaderCode: '5975927',
+    downloaderCode: '2339077',
     lastChecked: '12/11/2026',
     notes:
-      'Si Xuper TV deja de cargar, desinstala la versión anterior e ingresa el código 5975927 en Downloader. Este código se irá cambiando y actualizando constantemente aquí si ocurre un problema.',
+      'Si Xuper TV deja de cargar, desinstala la versión anterior e ingresa el código 2339077 en Downloader. Este código se irá cambiando y actualizando constantemente aquí si ocurre un problema.',
   },
   {
     id: 'youtube-sin-anuncios',

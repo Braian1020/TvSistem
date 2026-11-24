@@ -82,7 +82,7 @@ export function DownloaderSection() {
             Actualización constante de códigos y nuevas secciones en construcción
           </h4>
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-            Aplicaciones como <strong>Xuper TV</strong> (código vigente: <strong className="tabular-nums text-neutral-950">5975927</strong>) o <strong>YouTube sin anuncios</strong> son configuraciones temporales externas. Si ocurre algún problema o dejan de funcionar, <strong>los códigos se irán cambiando y actualizando constantemente en esta misma página</strong>. Además, estamos trabajando para agregar <strong>más códigos gratis y más tutoriales</strong> próximamente (sección en construcción).
+            Aplicaciones como <strong>Xuper TV</strong> (código vigente: <strong className="tabular-nums text-neutral-950">2339077</strong>) o <strong>YouTube sin anuncios</strong> son configuraciones temporales externas. Si ocurre algún problema o dejan de funcionar, <strong>los códigos se irán cambiando y actualizando constantemente en esta misma página</strong>. Además, estamos trabajando para agregar <strong>más códigos gratis y más tutoriales</strong> próximamente (sección en construcción).
           </p>
         </div>
       </div>

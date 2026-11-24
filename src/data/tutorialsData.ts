@@ -28,9 +28,9 @@ export const TUTORIAL_VIDEOS: TutorialVideo[] = [
     order: 3,
     driveId: '1YugwTo_hB_KuqzfaHdngLEqXHrqMvMpC',
     originalFileName: '3- Codigo.mp4',
-    title: '3. Cómo ingresar el código en Downloader (Código actual: 5975927)',
+    title: '3. Cómo ingresar el código en Downloader (Código actual: 2339077)',
     description:
-      'Mira exactamente dónde escribir el código vigente (5975927 para Xuper TV) en la barra de Downloader para iniciar la descarga.',
+      'Mira exactamente dónde escribir el código vigente (2339077 para Xuper TV) en la barra de Downloader para iniciar la descarga.',
     category: 'Configuración',
     fileSizeLabel: '4.3 MB',
   },

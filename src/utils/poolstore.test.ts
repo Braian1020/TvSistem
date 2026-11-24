@@ -93,7 +93,7 @@ test('filterPreinstalledApps separates temporal and permanent apps accurately', 
   assert.equal(temporal.length, 2);
   const xuper = temporal.find((app) => app.id === 'xuper-tv');
   assert.ok(xuper);
-  assert.equal(xuper.downloaderCode, '5975927');
+  assert.equal(xuper.downloaderCode, '2339077');
   assert.equal(xuper.status, 'Activo');
   assert.ok(temporal.some((app) => app.id === 'youtube-sin-anuncios'));
 
@@ -118,7 +118,7 @@ test('tutorial library helpers build valid Drive URLs, non-empty categories, and
   const xuperMatches = filterTutorialVideos(TUTORIAL_VIDEOS, 'xuper');
   assert.equal(xuperMatches.length, 5);
 
-  const codeMatches = filterTutorialVideos(TUTORIAL_VIDEOS, '5975927');
+  const codeMatches = filterTutorialVideos(TUTORIAL_VIDEOS, '2339077');
   assert.equal(codeMatches.length, 1);
 
   const categoryMatches = filterTutorialVideos(TUTORIAL_VIDEOS, '', 'Configuración');
